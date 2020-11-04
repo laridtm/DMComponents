@@ -13,8 +13,8 @@ protocol DMRadioOptionDelegate {
 }
 
 class DMRadioOption: DMButton {
-    var checkedView: UIView?
-    var uncheckedView: UIView?
+    var checkedView: UIImage?
+    var uncheckedView: UIImage?
     var delegate: DMRadioOptionDelegate?
     
     var isChecked: Bool = false {
@@ -36,20 +36,14 @@ class DMRadioOption: DMButton {
     override func setup() {
         super.setup()
         self.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchUpInside)
-        self.checkedView = UIImageView(image: UIImage(named: "icRadioSelected"))
-        self.uncheckedView = UIImageView(image: UIImage(named: "icRadio"))
+        self.checkedView = UIImage(named: "icRadioSelected")
+        self.uncheckedView = UIImage(named: "icRadio")
     }
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        checkedView?.removeFromSuperview()
-        uncheckedView?.removeFromSuperview()
-        removeConstraints(self.constraints)
-        
-        let view = isChecked == true ? checkedView : uncheckedView
-        if let view = view {
-            addSubview(view)
-        }
+        let buttonImage = isChecked == true ? checkedView : uncheckedView
+        self.setImage(buttonImage, for: .normal)
     }
 
     @objc func onClick(sender: DMButton) {
