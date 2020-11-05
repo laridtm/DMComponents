@@ -17,6 +17,7 @@
 		53881E562552D28300C56D6C /* NewDMComponentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53881E552552D28300C56D6C /* NewDMComponentsUITests.swift */; };
 		53881E672552DB8B00C56D6C /* DMRadioOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53881E662552DB8B00C56D6C /* DMRadioOption.swift */; };
 		53881E6C2552E00500C56D6C /* DMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53881E6B2552E00500C56D6C /* DMButton.swift */; };
+		53A1886C2554265200D18556 /* DMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1886B2554265200D18556 /* DMCheckBox.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		53881E572552D28400C56D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53881E662552DB8B00C56D6C /* DMRadioOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMRadioOption.swift; sourceTree = "<group>"; };
 		53881E6B2552E00500C56D6C /* DMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMButton.swift; sourceTree = "<group>"; };
+		53A1886B2554265200D18556 /* DMCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCheckBox.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				53881E3E2552D28300C56D6C /* LaunchScreen.storyboard */,
 				53881E412552D28300C56D6C /* Info.plist */,
 				53881E662552DB8B00C56D6C /* DMRadioOption.swift */,
+				53A1886B2554265200D18556 /* DMCheckBox.swift */,
 				53881E6B2552E00500C56D6C /* DMButton.swift */,
 			);
 			path = NewDMComponents;
@@ -267,6 +270,7 @@
 				53881E382552D28100C56D6C /* ViewController.swift in Sources */,
 				53881E342552D28100C56D6C /* AppDelegate.swift in Sources */,
 				53881E362552D28100C56D6C /* SceneDelegate.swift in Sources */,
+				53A1886C2554265200D18556 /* DMCheckBox.swift in Sources */,
 				53881E672552DB8B00C56D6C /* DMRadioOption.swift in Sources */,
 				53881E6C2552E00500C56D6C /* DMButton.swift in Sources */,
 			);

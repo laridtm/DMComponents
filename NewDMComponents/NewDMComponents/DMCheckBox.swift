@@ -1,21 +1,21 @@
 //
-//  DMRadioOption.swift
+//  DMCheckBox.swift
 //  NewDMComponents
 //
-//  Created by Larissa Diniz on 04/11/20.
+//  Created by Larissa Diniz on 05/11/20.
 //
 
 import Foundation
 import UIKit
 
-protocol DMRadioOptionDelegate {
-    func onClickRadio(_ sender: DMButton)
+protocol DMCheckBoxDelegate {
+    func onClickCheck(_ sender: DMButton)
 }
 
-class DMRadioOption: DMButton {
+class DMCheckBox: DMButton {
     var checkedView: UIImage?
     var uncheckedView: UIImage?
-    var delegate: DMRadioOptionDelegate?
+    var delegate: DMCheckBoxDelegate?
     
     var isChecked: Bool = false {
         didSet {
@@ -36,8 +36,8 @@ class DMRadioOption: DMButton {
     override func setup() {
         super.setup()
         self.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchUpInside)
-        self.checkedView = UIImage(named: "icRadioSelected")
-        self.uncheckedView = UIImage(named: "icRadio")
+        self.checkedView = UIImage(named: "icCheckboxSelected")
+        self.uncheckedView = UIImage(named: "icCheckbox")
     }
     
     override func layoutSubviews() {
@@ -48,7 +48,7 @@ class DMRadioOption: DMButton {
 
     @objc func onClick(sender: DMButton) {
         if sender == self {
-            delegate?.onClickRadio(self)
+            delegate?.onClickCheck(self)
         }
     }
 }

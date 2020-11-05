@@ -16,30 +16,162 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-O2-xhN" customClass="DMRadioOption" customModule="NewDMComponents" customModuleProvider="target">
-                                <rect key="frame" x="184" y="485" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-O2-xhN" customClass="DMRadioOption" customModule="NewDMComponents" customModuleProvider="target">
+                                <rect key="frame" x="62" y="218" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="6aX-S6-5Eg"/>
+                                    <constraint firstAttribute="height" constant="26" id="f1z-1h-Xax"/>
+                                </constraints>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-mH-7ct" customClass="DMRadioOption" customModule="NewDMComponents" customModuleProvider="target">
-                                <rect key="frame" x="184" y="433" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-mH-7ct" customClass="DMRadioOption" customModule="NewDMComponents" customModuleProvider="target">
+                                <rect key="frame" x="62" y="168" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="pZP-4r-dUw"/>
+                                    <constraint firstAttribute="width" constant="26" id="tA4-y3-hT8"/>
+                                </constraints>
+                                <state key="selected" image="icRadioSelected"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYz-rc-gkx" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
+                                <rect key="frame" x="62" y="354" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="FN0-DH-lFi"/>
+                                    <constraint firstAttribute="height" constant="26" id="kyM-ye-vuc"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="909-Pv-bqB" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
+                                <rect key="frame" x="62" y="404" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="5HZ-Iv-wut"/>
+                                    <constraint firstAttribute="height" constant="26" id="fJD-pn-oNC"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se4-3Y-kar" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
+                                <rect key="frame" x="62" y="454" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="1dA-IR-a0s"/>
+                                    <constraint firstAttribute="width" constant="26" id="2lC-uy-IoN"/>
+                                </constraints>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH9-j0-dJO" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
+                                <rect key="frame" x="62" y="504" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="lEe-9B-pF6"/>
+                                    <constraint firstAttribute="height" constant="26" id="oeY-f5-uBL"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RADIO BUTTONS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQG-9J-3i7">
+                                <rect key="frame" x="20" y="105" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHECK BOX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jLk-35-ZVi">
+                                <rect key="frame" x="20" y="287" width="374" height="27"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio button 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yco-Xn-NYF">
+                                <rect key="frame" x="102" y="171" width="109.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJ9-XB-uQV">
+                                <rect key="frame" x="102" y="353" width="92.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vka-Mf-ovV">
+                                <rect key="frame" x="102" y="403" width="95" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wot-MY-bm1">
+                                <rect key="frame" x="102" y="453" width="95.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check box 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsV-TN-Ok8">
+                                <rect key="frame" x="102" y="503" width="95.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radio button 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJ7-Te-nO5">
+                                <rect key="frame" x="102" y="221" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="Wot-MY-bm1" firstAttribute="leading" secondItem="se4-3Y-kar" secondAttribute="trailing" constant="14" id="2Pa-US-Ete"/>
+                            <constraint firstItem="xJ7-Te-nO5" firstAttribute="leading" secondItem="kTD-O2-xhN" secondAttribute="trailing" constant="14" id="3bn-fD-zmV"/>
+                            <constraint firstItem="xJ7-Te-nO5" firstAttribute="top" secondItem="yco-Xn-NYF" secondAttribute="bottom" constant="29" id="3hc-vM-xIC"/>
+                            <constraint firstItem="jLk-35-ZVi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3oe-Vj-FAq"/>
+                            <constraint firstItem="bsV-TN-Ok8" firstAttribute="leading" secondItem="gH9-j0-dJO" secondAttribute="trailing" constant="14" id="3pl-eB-CTx"/>
+                            <constraint firstItem="se4-3Y-kar" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="5dB-8S-ByC"/>
+                            <constraint firstItem="tpE-mH-7ct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="6kA-Kr-VTs"/>
+                            <constraint firstItem="TJ9-XB-uQV" firstAttribute="top" secondItem="jLk-35-ZVi" secondAttribute="bottom" constant="39" id="95A-eH-xaR"/>
+                            <constraint firstItem="se4-3Y-kar" firstAttribute="top" secondItem="909-Pv-bqB" secondAttribute="bottom" constant="24" id="Cdq-9N-IQl"/>
+                            <constraint firstItem="tpE-mH-7ct" firstAttribute="top" secondItem="CQG-9J-3i7" secondAttribute="bottom" constant="36" id="D4P-ou-Xub"/>
+                            <constraint firstItem="TJ9-XB-uQV" firstAttribute="leading" secondItem="CYz-rc-gkx" secondAttribute="trailing" constant="14" id="IRu-gd-8gK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CQG-9J-3i7" secondAttribute="trailing" constant="20" id="Kwg-BO-vjh"/>
+                            <constraint firstItem="kTD-O2-xhN" firstAttribute="top" secondItem="tpE-mH-7ct" secondAttribute="bottom" constant="24" id="OMK-u8-dnJ"/>
+                            <constraint firstItem="gH9-j0-dJO" firstAttribute="top" secondItem="se4-3Y-kar" secondAttribute="bottom" constant="24" id="P2R-FW-S6R"/>
+                            <constraint firstItem="yco-Xn-NYF" firstAttribute="top" secondItem="CQG-9J-3i7" secondAttribute="bottom" constant="39" id="SZe-St-OmA"/>
+                            <constraint firstItem="Wot-MY-bm1" firstAttribute="top" secondItem="Vka-Mf-ovV" secondAttribute="bottom" constant="29" id="SdR-tM-s6s"/>
+                            <constraint firstItem="gH9-j0-dJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="WGR-Lm-TLw"/>
+                            <constraint firstItem="CQG-9J-3i7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Xdl-wy-Vef"/>
+                            <constraint firstItem="yco-Xn-NYF" firstAttribute="leading" secondItem="tpE-mH-7ct" secondAttribute="trailing" constant="14" id="ZaK-A8-UQM"/>
+                            <constraint firstItem="kTD-O2-xhN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="b3c-Vc-Dvt"/>
+                            <constraint firstItem="Vka-Mf-ovV" firstAttribute="top" secondItem="TJ9-XB-uQV" secondAttribute="bottom" constant="29" id="eY5-Qk-sc2"/>
+                            <constraint firstItem="jLk-35-ZVi" firstAttribute="top" secondItem="kTD-O2-xhN" secondAttribute="bottom" constant="43" id="i8J-UV-N6M"/>
+                            <constraint firstItem="CYz-rc-gkx" firstAttribute="top" secondItem="jLk-35-ZVi" secondAttribute="bottom" constant="40" id="mtr-Iq-Aqf"/>
+                            <constraint firstItem="CQG-9J-3i7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="61" id="pTL-Wb-Mx3"/>
+                            <constraint firstItem="CYz-rc-gkx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="u2c-3D-Ffe"/>
+                            <constraint firstItem="Vka-Mf-ovV" firstAttribute="leading" secondItem="909-Pv-bqB" secondAttribute="trailing" constant="14" id="vwa-Z6-PPH"/>
+                            <constraint firstItem="909-Pv-bqB" firstAttribute="top" secondItem="CYz-rc-gkx" secondAttribute="bottom" constant="24" id="vyf-Oj-3LJ"/>
+                            <constraint firstItem="bsV-TN-Ok8" firstAttribute="top" secondItem="Wot-MY-bm1" secondAttribute="bottom" constant="29" id="wev-pD-Bln"/>
+                            <constraint firstItem="909-Pv-bqB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="y9k-jE-znr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jLk-35-ZVi" secondAttribute="trailing" constant="20" id="yrq-rL-doD"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="radioButton" destination="tpE-mH-7ct" id="Yeb-Rk-gH1"/>
+                        <outlet property="checkBox1" destination="CYz-rc-gkx" id="Uwu-vu-vBI"/>
+                        <outlet property="checkBox2" destination="909-Pv-bqB" id="grI-6b-rhk"/>
+                        <outlet property="checkBox3" destination="se4-3Y-kar" id="ygV-7S-BGU"/>
+                        <outlet property="checkBox4" destination="gH9-j0-dJO" id="OF8-UX-LQg"/>
+                        <outlet property="radioButton1" destination="tpE-mH-7ct" id="ct2-lk-dvx"/>
                         <outlet property="radioButton2" destination="kTD-O2-xhN" id="whH-UP-SmJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="119"/>
+            <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
         </scene>
     </scenes>
     <designables>
+        <designable name="909-Pv-bqB">
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
+        <designable name="CYz-rc-gkx">
+            <size key="intrinsicContentSize" width="49" height="32"/>
+        </designable>
+        <designable name="gH9-j0-dJO">
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
         <designable name="kTD-O2-xhN">
+            <size key="intrinsicContentSize" width="30" height="32"/>
+        </designable>
+        <designable name="se4-3Y-kar">
             <size key="intrinsicContentSize" width="30" height="32"/>
         </designable>
         <designable name="tpE-mH-7ct">
@@ -47,8 +179,9 @@
         </designable>
     </designables>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <image name="icRadioSelected" width="22" height="22"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
