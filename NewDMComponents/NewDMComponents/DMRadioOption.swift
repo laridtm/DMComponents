@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol DMRadioOptionDelegate {
-    func onClickRadio(_ sender: DMButton)
+    func dmRadioOption(_ radioOption: DMRadioOption, didCheck isChecked: Bool)
 }
 
 class DMRadioOption: DMButton {
@@ -48,7 +48,7 @@ class DMRadioOption: DMButton {
 
     @objc func onClick(sender: DMButton) {
         if sender == self {
-            delegate?.onClickRadio(self)
+            delegate?.dmRadioOption(self, didCheck: isChecked)
         }
     }
 }

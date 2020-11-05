@@ -31,28 +31,22 @@ class ViewController: UIViewController, DMRadioOptionDelegate, DMCheckBoxDelegat
         selectCounter3.delegate = self
     }
 
-    func onClickRadio(_ sender: DMButton) {
-        guard let currentRadioButton = sender as? DMRadioOption else {
-            return
-        }
+    func dmRadioOption(_ radioOption: DMRadioOption, didCheck isChecked: Bool) {
         [radioButton1, radioButton2].forEach { $0.isChecked = false }
-        currentRadioButton.isChecked = !currentRadioButton.isChecked
+        radioOption.isChecked = !isChecked
     }
     
-    func onClickCheck(_ sender: DMButton) {
-        guard let currentCheckBox = sender as? DMCheckBox else {
-            return
-        }
-        currentCheckBox.isChecked = !currentCheckBox.isChecked
+    func dmCheckBox(_ checkBox: DMCheckBox, didCheck isChecked: Bool) {
+        checkBox.isChecked = !isChecked
     }
     
-    func onClickAdd(_ sender: DMSelectCounter) {
-        sender.value += 1
+    func dmSelectAdd(_ selectCounter: DMSelectCounter) {
+        selectCounter.value += 1
     }
     
-    func onClickRemove(_ sender: DMSelectCounter) {
-        if sender.value > 0 {
-            sender.value -= 1
+    func dmSelectRemove(_ selectCounter: DMSelectCounter) {
+        if selectCounter.value > 0 {
+            selectCounter.value -= 1
         }
     }
 }

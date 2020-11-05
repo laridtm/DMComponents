@@ -9,8 +9,8 @@ import Foundation
 import UIKit
 
 protocol DMSelectCounterDelegate {
-    func onClickAdd(_ sender: DMSelectCounter)
-    func onClickRemove(_ sender: DMSelectCounter)
+    func dmSelectAdd(_ selectCounter: DMSelectCounter)
+    func dmSelectRemove(_ selectCounter: DMSelectCounter)
 }
 
 class DMSelectCounter: UIView {
@@ -42,13 +42,13 @@ class DMSelectCounter: UIView {
     
     @objc func onClickAdd(sender: UIButton) {
         if sender == self.addButton {
-            delegate?.onClickAdd(self)
+            delegate?.dmSelectAdd(self)
         }
     }
     
     @objc func onClickRemove(sender: UIButton) {
         if sender == self.removeButton {
-            delegate?.onClickRemove(self)
+            delegate?.dmSelectRemove(self)
         }
     }
     

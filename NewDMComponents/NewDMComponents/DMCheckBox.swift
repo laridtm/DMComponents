@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol DMCheckBoxDelegate {
-    func onClickCheck(_ sender: DMButton)
+    func dmCheckBox(_ checkBox: DMCheckBox, didCheck isChecked: Bool)
 }
 
 class DMCheckBox: DMButton {
@@ -48,7 +48,7 @@ class DMCheckBox: DMButton {
 
     @objc func onClick(sender: DMButton) {
         if sender == self {
-            delegate?.onClickCheck(self)
+            delegate?.dmCheckBox(self, didCheck: isChecked)
         }
     }
 }
