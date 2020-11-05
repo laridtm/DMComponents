@@ -7,13 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController, DMRadioOptionDelegate, DMCheckBoxDelegate {
+class ViewController: UIViewController, DMRadioOptionDelegate, DMCheckBoxDelegate, DMSelectCounterDelegate {
     @IBOutlet weak var radioButton1: DMRadioOption!
     @IBOutlet weak var radioButton2: DMRadioOption!
     @IBOutlet weak var checkBox1: DMCheckBox!
     @IBOutlet weak var checkBox2: DMCheckBox!
     @IBOutlet weak var checkBox3: DMCheckBox!
     @IBOutlet weak var checkBox4: DMCheckBox!
+    @IBOutlet weak var selectCounter1: DMSelectCounter!
+    @IBOutlet weak var selectCounter2: DMSelectCounter!
+    @IBOutlet weak var selectCounter3: DMSelectCounter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +26,9 @@ class ViewController: UIViewController, DMRadioOptionDelegate, DMCheckBoxDelegat
         checkBox2.delegate = self
         checkBox3.delegate = self
         checkBox4.delegate = self
+        selectCounter1.delegate = self
+        selectCounter2.delegate = self
+        selectCounter3.delegate = self
     }
 
     func onClickRadio(_ sender: DMButton) {
@@ -38,6 +44,16 @@ class ViewController: UIViewController, DMRadioOptionDelegate, DMCheckBoxDelegat
             return
         }
         currentCheckBox.isChecked = !currentCheckBox.isChecked
+    }
+    
+    func onClickAdd(_ sender: DMSelectCounter) {
+        sender.value += 1
+    }
+    
+    func onClickRemove(_ sender: DMSelectCounter) {
+        if sender.value > 0 {
+            sender.value -= 1
+        }
     }
 }
 
