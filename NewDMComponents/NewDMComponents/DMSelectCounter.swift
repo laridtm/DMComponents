@@ -19,6 +19,18 @@ class DMSelectCounter: UIView {
     var labelQuantity: UILabel?
     var delegate: DMSelectCounterDelegate?
     
+    var buttonsColor = UIColor(red: 200.0 / 255.0, green: 20.0 / 255.0, blue: 20.0 / 255.0, alpha: 1.0) {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
+    var labelColor = UIColor(red: 75.0 / 255.0, green: 75.0 / 255.0, blue: 98.0 / 255.0, alpha: 1.0) {
+        didSet {
+            setNeedsLayout()
+        }
+    }
+    
     var value: Int = 0 {
         didSet {
             setNeedsLayout()
@@ -38,6 +50,9 @@ class DMSelectCounter: UIView {
     override func layoutSubviews() {
         super.layoutSubviews()
         labelQuantity?.text = "\(value)"
+        removeButton?.setTitleColor(self.buttonsColor, for: .normal)
+        addButton?.setTitleColor(self.buttonsColor, for: .normal)
+        labelQuantity?.textColor = self.labelColor
     }
     
     @objc func onClickAdd(sender: UIButton) {
@@ -65,7 +80,7 @@ class DMSelectCounter: UIView {
             removeButton.heightAnchor.constraint(equalToConstant: 16).isActive = true
             removeButton.setTitle("-", for: .normal)
             removeButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-            removeButton.setTitleColor(UIColor(red: 200.0 / 255.0, green: 20.0 / 255.0, blue: 20.0 / 255.0, alpha: 1.0), for: .normal)
+            removeButton.setTitleColor(self.buttonsColor, for: .normal)
             self.removeButton?.addTarget(self, action: #selector(onClickRemove), for: UIControl.Event.touchUpInside)
         }
         
@@ -79,7 +94,7 @@ class DMSelectCounter: UIView {
             addButton.heightAnchor.constraint(equalToConstant: 16).isActive = true
             addButton.setTitle("+", for: .normal)
             addButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-            addButton.setTitleColor(UIColor(red: 200.0 / 255.0, green: 20.0 / 255.0, blue: 20.0 / 255.0, alpha: 1.0), for: .normal)
+            addButton.setTitleColor(self.buttonsColor, for: .normal)
             self.addButton?.addTarget(self, action: #selector(onClickAdd), for: UIControl.Event.touchUpInside)
         }
         
@@ -93,7 +108,7 @@ class DMSelectCounter: UIView {
             labelQuantity.heightAnchor.constraint(equalToConstant: 16).isActive = true
             labelQuantity.text = "0"
             labelQuantity.font = UIFont.systemFont(ofSize: 14)
-            labelQuantity.textColor = (UIColor(red: 75.0 / 255.0, green: 75.0 / 255.0, blue: 98.0 / 255.0, alpha: 1.0))
+            labelQuantity.textColor = self.labelColor
         }
     }
 }
