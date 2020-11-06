@@ -19,6 +19,7 @@
 		53881E6C2552E00500C56D6C /* DMButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53881E6B2552E00500C56D6C /* DMButton.swift */; };
 		53A1886C2554265200D18556 /* DMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1886B2554265200D18556 /* DMCheckBox.swift */; };
 		53A1887C255438DC00D18556 /* DMSelectCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1887B255438DC00D18556 /* DMSelectCounter.swift */; };
+		53A1F3F02555BB790008A135 /* UI10DMComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A1F3E42555BB3F0008A135 /* UI10DMComponentsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		53881E6B2552E00500C56D6C /* DMButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMButton.swift; sourceTree = "<group>"; };
 		53A1886B2554265200D18556 /* DMCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMCheckBox.swift; sourceTree = "<group>"; };
 		53A1887B255438DC00D18556 /* DMSelectCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMSelectCounter.swift; sourceTree = "<group>"; };
+		53A1F3E42555BB3F0008A135 /* UI10DMComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI10DMComponentsTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 			children = (
 				53881E322552D28100C56D6C /* NewDMComponents */,
 				53881E492552D28300C56D6C /* NewDMComponentsTests */,
+				53A1F3E32555BA150008A135 /* UITests */,
 				53881E542552D28300C56D6C /* NewDMComponentsUITests */,
 				53881E312552D28100C56D6C /* Products */,
 			);
@@ -138,6 +141,14 @@
 				53881E572552D28400C56D6C /* Info.plist */,
 			);
 			path = NewDMComponentsUITests;
+			sourceTree = "<group>";
+		};
+		53A1F3E32555BA150008A135 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				53A1F3E42555BB3F0008A135 /* UI10DMComponentsTests.swift */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53881E562552D28300C56D6C /* NewDMComponentsUITests.swift in Sources */,
+				53A1F3F02555BB790008A135 /* UI10DMComponentsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

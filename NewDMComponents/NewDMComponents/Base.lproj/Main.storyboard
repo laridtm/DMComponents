@@ -18,6 +18,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTD-O2-xhN" customClass="DMRadioOption" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="218" width="26" height="26"/>
+                                <accessibility key="accessibilityConfiguration" identifier="radio2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="6aX-S6-5Eg"/>
                                     <constraint firstAttribute="height" constant="26" id="f1z-1h-Xax"/>
@@ -25,6 +26,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpE-mH-7ct" customClass="DMRadioOption" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="168" width="26" height="26"/>
+                                <accessibility key="accessibilityConfiguration" identifier="radio1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="pZP-4r-dUw"/>
                                     <constraint firstAttribute="width" constant="26" id="tA4-y3-hT8"/>
@@ -33,14 +35,15 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYz-rc-gkx" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="354" width="26" height="26"/>
+                                <accessibility key="accessibilityConfiguration" identifier="check1"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="FN0-DH-lFi"/>
                                     <constraint firstAttribute="height" constant="26" id="kyM-ye-vuc"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="909-Pv-bqB" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="404" width="26" height="26"/>
+                                <accessibility key="accessibilityConfiguration" identifier="check2"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="5HZ-Iv-wut"/>
                                     <constraint firstAttribute="height" constant="26" id="fJD-pn-oNC"/>
@@ -48,6 +51,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se4-3Y-kar" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="454" width="26" height="26"/>
+                                <accessibility key="accessibilityConfiguration" identifier="check3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="26" id="1dA-IR-a0s"/>
                                     <constraint firstAttribute="width" constant="26" id="2lC-uy-IoN"/>
@@ -55,6 +59,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gH9-j0-dJO" customClass="DMCheckBox" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="504" width="26" height="26"/>
+                                <accessibility key="accessibilityConfiguration" identifier="check4"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="26" id="lEe-9B-pF6"/>
                                     <constraint firstAttribute="height" constant="26" id="oeY-f5-uBL"/>
@@ -119,6 +124,7 @@
                                 <rect key="frame" x="62" y="623" width="76" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="counter1"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select counter 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0b-H3-Sio">
                                 <rect key="frame" x="152" y="631" width="123" height="21"/>
@@ -131,11 +137,13 @@
                                 <rect key="frame" x="62" y="686" width="76" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="counter2"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lAE-Dz-yGy" customClass="DMSelectCounter" customModule="NewDMComponents" customModuleProvider="target">
                                 <rect key="frame" x="62" y="745" width="76" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="counter3"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select counter 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOY-ir-Y99">
                                 <rect key="frame" x="152" y="694" width="125" height="21"/>
@@ -209,7 +217,7 @@
             <size key="intrinsicContentSize" width="30" height="32"/>
         </designable>
         <designable name="CYz-rc-gkx">
-            <size key="intrinsicContentSize" width="49" height="32"/>
+            <size key="intrinsicContentSize" width="30" height="32"/>
         </designable>
         <designable name="gH9-j0-dJO">
             <size key="intrinsicContentSize" width="30" height="32"/>
