@@ -71,6 +71,7 @@ class DMSelectCounter: UIView {
         self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: 76, height: 36)
         
         removeButton = UIButton(frame: CGRect(x: 0, y: 0, width: 8, height: 16))
+        removeButton?.accessibilityIdentifier = "removeButton"
         if let removeButton = removeButton {
             self.addSubview(removeButton)
             removeButton.translatesAutoresizingMaskIntoConstraints = false
@@ -85,6 +86,7 @@ class DMSelectCounter: UIView {
         }
         
         addButton = UIButton(frame: CGRect(x: 0, y: 0, width: 8, height: 16))
+        addButton?.accessibilityIdentifier = "addButton"
         if let addButton = addButton {
             self.addSubview(addButton)
             addButton.translatesAutoresizingMaskIntoConstraints = false
