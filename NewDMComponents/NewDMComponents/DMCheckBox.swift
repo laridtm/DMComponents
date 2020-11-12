@@ -36,8 +36,8 @@ class DMCheckBox: DMButton {
     override func setup() {
         super.setup()
         self.addTarget(self, action: #selector(onClick), for: UIControl.Event.touchUpInside)
-        self.checkedView = UIImage(named: "icCheckboxSelected")
-        self.uncheckedView = UIImage(named: "icCheckbox")
+        self.checkedView = UIImage(named: "icCheckboxSelected2")
+        self.uncheckedView = UIImage(named: "icCheckbox2")
     }
     
     override func layoutSubviews() {

@@ -34,21 +34,21 @@ class UI10DMComponentsTests: XCTestCase {
     }
     
     func test02CheckBoxActions() {
-        XCTAssertEqual(app.buttons["check1"].label, "icCheckbox")
-        XCTAssertEqual(app.buttons["check2"].label, "icCheckbox")
+        XCTAssertEqual(app.buttons["check1"].label, "icCheckbox2")
+        XCTAssertEqual(app.buttons["check2"].label, "icCheckbox2")
         
         app.buttons["check1"].tap()
-        XCTAssertEqual(app.buttons["check1"].label, "icCheckboxSelected")
-        XCTAssertEqual(app.buttons["check2"].label, "icCheckbox")
+        XCTAssertEqual(app.buttons["check1"].label, "icCheckboxSelected2")
+        XCTAssertEqual(app.buttons["check2"].label, "icCheckbox2")
         
         app.buttons["check2"].tap()
-        XCTAssertEqual(app.buttons["check1"].label, "icCheckboxSelected")
-        XCTAssertEqual(app.buttons["check2"].label, "icCheckboxSelected")
+        XCTAssertEqual(app.buttons["check1"].label, "icCheckboxSelected2")
+        XCTAssertEqual(app.buttons["check2"].label, "icCheckboxSelected2")
         
         app.buttons["check1"].tap()
         app.buttons["check2"].tap()
-        XCTAssertEqual(app.buttons["check1"].label, "icCheckbox")
-        XCTAssertEqual(app.buttons["check2"].label, "icCheckbox")
+        XCTAssertEqual(app.buttons["check1"].label, "icCheckbox2")
+        XCTAssertEqual(app.buttons["check2"].label, "icCheckbox2")
     }
     
     func test03SelectCounterActions() {
